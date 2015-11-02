@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F29BD111BE80E6A00B1631D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD101BE80E6A00B1631D /* AppDelegate.swift */; };
+		3F29BD131BE80E6A00B1631D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD121BE80E6A00B1631D /* ViewController.swift */; };
+		3F29BD161BE80E6A00B1631D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29BD141BE80E6A00B1631D /* Main.storyboard */; };
+		3F29BD181BE80E6A00B1631D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F29BD171BE80E6A00B1631D /* Assets.xcassets */; };
+		3F29BD1B1BE80E6A00B1631D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29BD191BE80E6A00B1631D /* LaunchScreen.storyboard */; };
+		3F29BD261BE80E6A00B1631D /* Pragmatic_TweetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD251BE80E6A00B1631D /* Pragmatic_TweetsTests.swift */; };
+		3F29BD311BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD301BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F29BD221BE80E6A00B1631D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F29BD051BE80E6A00B1631D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F29BD0C1BE80E6A00B1631D;
+			remoteInfo = "Pragmatic Tweets";
+		};
+		3F29BD2D1BE80E6A00B1631D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F29BD051BE80E6A00B1631D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F29BD0C1BE80E6A00B1631D;
+			remoteInfo = "Pragmatic Tweets";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F29BD0D1BE80E6A00B1631D /* Pragmatic Tweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pragmatic Tweets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F29BD101BE80E6A00B1631D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F29BD121BE80E6A00B1631D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F29BD151BE80E6A00B1631D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F29BD171BE80E6A00B1631D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F29BD1A1BE80E6A00B1631D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F29BD1C1BE80E6A00B1631D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F29BD211BE80E6A00B1631D /* Pragmatic TweetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pragmatic TweetsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F29BD251BE80E6A00B1631D /* Pragmatic_TweetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pragmatic_TweetsTests.swift; sourceTree = "<group>"; };
+		3F29BD271BE80E6A00B1631D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F29BD2C1BE80E6A00B1631D /* Pragmatic TweetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pragmatic TweetsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F29BD301BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pragmatic_TweetsUITests.swift; sourceTree = "<group>"; };
+		3F29BD321BE80E6A00B1631D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F29BD0A1BE80E6A00B1631D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F29BD1E1BE80E6A00B1631D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F29BD291BE80E6A00B1631D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F29BD041BE80E6A00B1631D = {
+			isa = PBXGroup;
+			children = (
+				3F29BD0F1BE80E6A00B1631D /* Pragmatic Tweets */,
+				3F29BD241BE80E6A00B1631D /* Pragmatic TweetsTests */,
+				3F29BD2F1BE80E6A00B1631D /* Pragmatic TweetsUITests */,
+				3F29BD0E1BE80E6A00B1631D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F29BD0E1BE80E6A00B1631D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F29BD0D1BE80E6A00B1631D /* Pragmatic Tweets.app */,
+				3F29BD211BE80E6A00B1631D /* Pragmatic TweetsTests.xctest */,
+				3F29BD2C1BE80E6A00B1631D /* Pragmatic TweetsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F29BD0F1BE80E6A00B1631D /* Pragmatic Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				3F29BD101BE80E6A00B1631D /* AppDelegate.swift */,
+				3F29BD121BE80E6A00B1631D /* ViewController.swift */,
+				3F29BD141BE80E6A00B1631D /* Main.storyboard */,
+				3F29BD171BE80E6A00B1631D /* Assets.xcassets */,
+				3F29BD191BE80E6A00B1631D /* LaunchScreen.storyboard */,
+				3F29BD1C1BE80E6A00B1631D /* Info.plist */,
+			);
+			path = "Pragmatic Tweets";
+			sourceTree = "<group>";
+		};
+		3F29BD241BE80E6A00B1631D /* Pragmatic TweetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F29BD251BE80E6A00B1631D /* Pragmatic_TweetsTests.swift */,
+				3F29BD271BE80E6A00B1631D /* Info.plist */,
+			);
+			path = "Pragmatic TweetsTests";
+			sourceTree = "<group>";
+		};
+		3F29BD2F1BE80E6A00B1631D /* Pragmatic TweetsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F29BD301BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift */,
+				3F29BD321BE80E6A00B1631D /* Info.plist */,
+			);
+			path = "Pragmatic TweetsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F29BD0C1BE80E6A00B1631D /* Pragmatic Tweets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F29BD351BE80E6A00B1631D /* Build configuration list for PBXNativeTarget "Pragmatic Tweets" */;
+			buildPhases = (
+				3F29BD091BE80E6A00B1631D /* Sources */,
+				3F29BD0A1BE80E6A00B1631D /* Frameworks */,
+				3F29BD0B1BE80E6A00B1631D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pragmatic Tweets";
+			productName = "Pragmatic Tweets";
+			productReference = 3F29BD0D1BE80E6A00B1631D /* Pragmatic Tweets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F29BD201BE80E6A00B1631D /* Pragmatic TweetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F29BD381BE80E6A00B1631D /* Build configuration list for PBXNativeTarget "Pragmatic TweetsTests" */;
+			buildPhases = (
+				3F29BD1D1BE80E6A00B1631D /* Sources */,
+				3F29BD1E1BE80E6A00B1631D /* Frameworks */,
+				3F29BD1F1BE80E6A00B1631D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F29BD231BE80E6A00B1631D /* PBXTargetDependency */,
+			);
+			name = "Pragmatic TweetsTests";
+			productName = "Pragmatic TweetsTests";
+			productReference = 3F29BD211BE80E6A00B1631D /* Pragmatic TweetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F29BD2B1BE80E6A00B1631D /* Pragmatic TweetsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F29BD3B1BE80E6A00B1631D /* Build configuration list for PBXNativeTarget "Pragmatic TweetsUITests" */;
+			buildPhases = (
+				3F29BD281BE80E6A00B1631D /* Sources */,
+				3F29BD291BE80E6A00B1631D /* Frameworks */,
+				3F29BD2A1BE80E6A00B1631D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F29BD2E1BE80E6A00B1631D /* PBXTargetDependency */,
+			);
+			name = "Pragmatic TweetsUITests";
+			productName = "Pragmatic TweetsUITests";
+			productReference = 3F29BD2C1BE80E6A00B1631D /* Pragmatic TweetsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F29BD051BE80E6A00B1631D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Pragmatic Programmers LLC";
+				TargetAttributes = {
+					3F29BD0C1BE80E6A00B1631D = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 3UFJTFLA5V;
+					};
+					3F29BD201BE80E6A00B1631D = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 3UFJTFLA5V;
+						TestTargetID = 3F29BD0C1BE80E6A00B1631D;
+					};
+					3F29BD2B1BE80E6A00B1631D = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 3UFJTFLA5V;
+						TestTargetID = 3F29BD0C1BE80E6A00B1631D;
+					};
+				};
+			};
+			buildConfigurationList = 3F29BD081BE80E6A00B1631D /* Build configuration list for PBXProject "Pragmatic Tweets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F29BD041BE80E6A00B1631D;
+			productRefGroup = 3F29BD0E1BE80E6A00B1631D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F29BD0C1BE80E6A00B1631D /* Pragmatic Tweets */,
+				3F29BD201BE80E6A00B1631D /* Pragmatic TweetsTests */,
+				3F29BD2B1BE80E6A00B1631D /* Pragmatic TweetsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F29BD0B1BE80E6A00B1631D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F29BD1B1BE80E6A00B1631D /* LaunchScreen.storyboard in Resources */,
+				3F29BD181BE80E6A00B1631D /* Assets.xcassets in Resources */,
+				3F29BD161BE80E6A00B1631D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F29BD1F1BE80E6A00B1631D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F29BD2A1BE80E6A00B1631D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F29BD091BE80E6A00B1631D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F29BD131BE80E6A00B1631D /* ViewController.swift in Sources */,
+				3F29BD111BE80E6A00B1631D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F29BD1D1BE80E6A00B1631D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F29BD261BE80E6A00B1631D /* Pragmatic_TweetsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F29BD281BE80E6A00B1631D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F29BD311BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F29BD231BE80E6A00B1631D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F29BD0C1BE80E6A00B1631D /* Pragmatic Tweets */;
+			targetProxy = 3F29BD221BE80E6A00B1631D /* PBXContainerItemProxy */;
+		};
+		3F29BD2E1BE80E6A00B1631D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F29BD0C1BE80E6A00B1631D /* Pragmatic Tweets */;
+			targetProxy = 3F29BD2D1BE80E6A00B1631D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F29BD141BE80E6A00B1631D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F29BD151BE80E6A00B1631D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F29BD191BE80E6A00B1631D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F29BD1A1BE80E6A00B1631D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F29BD331BE80E6A00B1631D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F29BD341BE80E6A00B1631D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F29BD361BE80E6A00B1631D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Pragmatic Tweets/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pragprog.mrieger.Pragmatic-Tweets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F29BD371BE80E6A00B1631D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Pragmatic Tweets/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pragprog.mrieger.Pragmatic-Tweets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F29BD391BE80E6A00B1631D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Pragmatic TweetsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pragprog.mrieger.Pragmatic-TweetsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pragmatic Tweets.app/Pragmatic Tweets";
+			};
+			name = Debug;
+		};
+		3F29BD3A1BE80E6A00B1631D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Pragmatic TweetsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pragprog.mrieger.Pragmatic-TweetsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pragmatic Tweets.app/Pragmatic Tweets";
+			};
+			name = Release;
+		};
+		3F29BD3C1BE80E6A00B1631D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Pragmatic TweetsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pragprog.mrieger.Pragmatic-TweetsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Pragmatic Tweets";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3F29BD3D1BE80E6A00B1631D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Pragmatic TweetsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pragprog.mrieger.Pragmatic-TweetsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Pragmatic Tweets";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F29BD081BE80E6A00B1631D /* Build configuration list for PBXProject "Pragmatic Tweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F29BD331BE80E6A00B1631D /* Debug */,
+				3F29BD341BE80E6A00B1631D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F29BD351BE80E6A00B1631D /* Build configuration list for PBXNativeTarget "Pragmatic Tweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F29BD361BE80E6A00B1631D /* Debug */,
+				3F29BD371BE80E6A00B1631D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F29BD381BE80E6A00B1631D /* Build configuration list for PBXNativeTarget "Pragmatic TweetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F29BD391BE80E6A00B1631D /* Debug */,
+				3F29BD3A1BE80E6A00B1631D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F29BD3B1BE80E6A00B1631D /* Build configuration list for PBXNativeTarget "Pragmatic TweetsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F29BD3C1BE80E6A00B1631D /* Debug */,
+				3F29BD3D1BE80E6A00B1631D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F29BD051BE80E6A00B1631D /* Project object */;
+}
