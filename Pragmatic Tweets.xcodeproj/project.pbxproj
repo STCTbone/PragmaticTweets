@@ -14,7 +14,8 @@
 		3F29BD1B1BE80E6A00B1631D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29BD191BE80E6A00B1631D /* LaunchScreen.storyboard */; };
 		3F29BD261BE80E6A00B1631D /* Pragmatic_TweetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD251BE80E6A00B1631D /* Pragmatic_TweetsTests.swift */; };
 		3F29BD311BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD301BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift */; };
-		3FBEE3AD1BE840E900870868 /* WebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE3AC1BE840E900870868 /* WebViewTests.swift */; };
+		3FBEE3AF1BE8601A00870868 /* ParsedTweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE3AE1BE8601A00870868 /* ParsedTweet.swift */; };
+		3FBEE3B11BE8646F00870868 /* ParsedTweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE3B01BE8646F00870868 /* ParsedTweetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,8 @@
 		3F29BD2C1BE80E6A00B1631D /* Pragmatic TweetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pragmatic TweetsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29BD301BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pragmatic_TweetsUITests.swift; sourceTree = "<group>"; };
 		3F29BD321BE80E6A00B1631D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FBEE3AC1BE840E900870868 /* WebViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewTests.swift; sourceTree = "<group>"; };
+		3FBEE3AE1BE8601A00870868 /* ParsedTweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParsedTweet.swift; path = ../ParsedTweet.swift; sourceTree = "<group>"; };
+		3FBEE3B01BE8646F00870868 /* ParsedTweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedTweetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,14 @@
 		3F29BD0F1BE80E6A00B1631D /* Pragmatic Tweets */ = {
 			isa = PBXGroup;
 			children = (
+				3FBEE3AE1BE8601A00870868 /* ParsedTweet.swift */,
 				3F29BD101BE80E6A00B1631D /* AppDelegate.swift */,
 				3F29BD121BE80E6A00B1631D /* ViewController.swift */,
 				3F29BD141BE80E6A00B1631D /* Main.storyboard */,
 				3F29BD171BE80E6A00B1631D /* Assets.xcassets */,
 				3F29BD191BE80E6A00B1631D /* LaunchScreen.storyboard */,
 				3F29BD1C1BE80E6A00B1631D /* Info.plist */,
+				3FBEE3B01BE8646F00870868 /* ParsedTweetCell.swift */,
 			);
 			path = "Pragmatic Tweets";
 			sourceTree = "<group>";
@@ -114,7 +118,6 @@
 			children = (
 				3F29BD251BE80E6A00B1631D /* Pragmatic_TweetsTests.swift */,
 				3F29BD271BE80E6A00B1631D /* Info.plist */,
-				3FBEE3AC1BE840E900870868 /* WebViewTests.swift */,
 			);
 			path = "Pragmatic TweetsTests";
 			sourceTree = "<group>";
@@ -262,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBEE3B11BE8646F00870868 /* ParsedTweetCell.swift in Sources */,
+				3FBEE3AF1BE8601A00870868 /* ParsedTweet.swift in Sources */,
 				3F29BD131BE80E6A00B1631D /* ViewController.swift in Sources */,
 				3F29BD111BE80E6A00B1631D /* AppDelegate.swift in Sources */,
 			);
@@ -272,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F29BD261BE80E6A00B1631D /* Pragmatic_TweetsTests.swift in Sources */,
-				3FBEE3AD1BE840E900870868 /* WebViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
