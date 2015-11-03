@@ -14,6 +14,7 @@
 		3F29BD1B1BE80E6A00B1631D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29BD191BE80E6A00B1631D /* LaunchScreen.storyboard */; };
 		3F29BD261BE80E6A00B1631D /* Pragmatic_TweetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD251BE80E6A00B1631D /* Pragmatic_TweetsTests.swift */; };
 		3F29BD311BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD301BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift */; };
+		3FBEE3AD1BE840E900870868 /* WebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE3AC1BE840E900870868 /* WebViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3F29BD2C1BE80E6A00B1631D /* Pragmatic TweetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pragmatic TweetsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29BD301BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pragmatic_TweetsUITests.swift; sourceTree = "<group>"; };
 		3F29BD321BE80E6A00B1631D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBEE3AC1BE840E900870868 /* WebViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				3F29BD251BE80E6A00B1631D /* Pragmatic_TweetsTests.swift */,
 				3F29BD271BE80E6A00B1631D /* Info.plist */,
+				3FBEE3AC1BE840E900870868 /* WebViewTests.swift */,
 			);
 			path = "Pragmatic TweetsTests";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F29BD261BE80E6A00B1631D /* Pragmatic_TweetsTests.swift in Sources */,
+				3FBEE3AD1BE840E900870868 /* WebViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +491,7 @@
 				3F29BD371BE80E6A00B1631D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F29BD381BE80E6A00B1631D /* Build configuration list for PBXNativeTarget "Pragmatic TweetsTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				3F29BD3A1BE80E6A00B1631D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F29BD3B1BE80E6A00B1631D /* Build configuration list for PBXNativeTarget "Pragmatic TweetsUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				3F29BD3D1BE80E6A00B1631D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

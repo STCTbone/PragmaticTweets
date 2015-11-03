@@ -14,6 +14,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var twitterWebView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        reloadTweets()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -32,10 +33,15 @@ class ViewController: UIViewController {
     }
   }
   @IBAction func handleShowMyTweetsTapped(sender: UIButton) {
-    if let url = NSURL (string: "https://twitter.com/mriegertest"){
-      let urlRequest = NSURLRequest(URL: url)
-      twitterWebView.loadRequest(urlRequest)
+    reloadTweets()
+  }
+  
+  func reloadTweets() {
+    guard let url = NSURL(string: "https://twitter.com/mriegertest") else {
+      return
     }
+    let urlRequest = NSURLRequest(URL: url)
+    twitterWebView.loadRequest(urlRequest)
   }
 }
 
