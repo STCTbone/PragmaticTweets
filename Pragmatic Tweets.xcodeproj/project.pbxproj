@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F25FCBA1BEB98C2008E9A62 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25FCB91BEB98C2008E9A62 /* UserDetailViewController.swift */; };
 		3F29BD111BE80E6A00B1631D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD101BE80E6A00B1631D /* AppDelegate.swift */; };
-		3F29BD131BE80E6A00B1631D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD121BE80E6A00B1631D /* ViewController.swift */; };
+		3F29BD131BE80E6A00B1631D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD121BE80E6A00B1631D /* RootViewController.swift */; };
 		3F29BD161BE80E6A00B1631D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29BD141BE80E6A00B1631D /* Main.storyboard */; };
 		3F29BD181BE80E6A00B1631D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F29BD171BE80E6A00B1631D /* Assets.xcassets */; };
 		3F29BD1B1BE80E6A00B1631D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29BD191BE80E6A00B1631D /* LaunchScreen.storyboard */; };
 		3F29BD261BE80E6A00B1631D /* Pragmatic_TweetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD251BE80E6A00B1631D /* Pragmatic_TweetsTests.swift */; };
 		3F29BD311BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD301BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift */; };
+		3F99A04A1BEB06ED0013E9EC /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99A0491BEB06ED0013E9EC /* TweetDetailViewController.swift */; };
 		3FBEE3AF1BE8601A00870868 /* ParsedTweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE3AE1BE8601A00870868 /* ParsedTweet.swift */; };
 		3FBEE3B11BE8646F00870868 /* ParsedTweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE3B01BE8646F00870868 /* ParsedTweetCell.swift */; };
+		3FBEE3B51BEAFB2600870868 /* TwitterAPIRequestUtilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE3B41BEAFB2600870868 /* TwitterAPIRequestUtilites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F25FCB91BEB98C2008E9A62 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		3F29BD0D1BE80E6A00B1631D /* Pragmatic Tweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pragmatic Tweets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29BD101BE80E6A00B1631D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F29BD121BE80E6A00B1631D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F29BD121BE80E6A00B1631D /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3F29BD151BE80E6A00B1631D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F29BD171BE80E6A00B1631D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F29BD1A1BE80E6A00B1631D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,8 +53,10 @@
 		3F29BD2C1BE80E6A00B1631D /* Pragmatic TweetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pragmatic TweetsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29BD301BE80E6A00B1631D /* Pragmatic_TweetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pragmatic_TweetsUITests.swift; sourceTree = "<group>"; };
 		3F29BD321BE80E6A00B1631D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F99A0491BEB06ED0013E9EC /* TweetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetDetailViewController.swift; sourceTree = "<group>"; };
 		3FBEE3AE1BE8601A00870868 /* ParsedTweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParsedTweet.swift; path = ../ParsedTweet.swift; sourceTree = "<group>"; };
 		3FBEE3B01BE8646F00870868 /* ParsedTweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedTweetCell.swift; sourceTree = "<group>"; };
+		3FBEE3B41BEAFB2600870868 /* TwitterAPIRequestUtilites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPIRequestUtilites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F25FCB81BEB98AB008E9A62 /* User Detail VC */ = {
+			isa = PBXGroup;
+			children = (
+				3F25FCB91BEB98C2008E9A62 /* UserDetailViewController.swift */,
+			);
+			name = "User Detail VC";
+			sourceTree = "<group>";
+		};
 		3F29BD041BE80E6A00B1631D = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +115,15 @@
 		3F29BD0F1BE80E6A00B1631D /* Pragmatic Tweets */ = {
 			isa = PBXGroup;
 			children = (
-				3FBEE3AE1BE8601A00870868 /* ParsedTweet.swift */,
+				3F25FCB81BEB98AB008E9A62 /* User Detail VC */,
+				3F99A0481BEB06B70013E9EC /* Tweet Detail VC */,
+				3FBEE3B31BEAFA7400870868 /* Twitter Utilities */,
+				3FBEE3B21BEAFA3D00870868 /* Root VC */,
 				3F29BD101BE80E6A00B1631D /* AppDelegate.swift */,
-				3F29BD121BE80E6A00B1631D /* ViewController.swift */,
 				3F29BD141BE80E6A00B1631D /* Main.storyboard */,
 				3F29BD171BE80E6A00B1631D /* Assets.xcassets */,
 				3F29BD191BE80E6A00B1631D /* LaunchScreen.storyboard */,
 				3F29BD1C1BE80E6A00B1631D /* Info.plist */,
-				3FBEE3B01BE8646F00870868 /* ParsedTweetCell.swift */,
 			);
 			path = "Pragmatic Tweets";
 			sourceTree = "<group>";
@@ -129,6 +144,32 @@
 				3F29BD321BE80E6A00B1631D /* Info.plist */,
 			);
 			path = "Pragmatic TweetsUITests";
+			sourceTree = "<group>";
+		};
+		3F99A0481BEB06B70013E9EC /* Tweet Detail VC */ = {
+			isa = PBXGroup;
+			children = (
+				3F99A0491BEB06ED0013E9EC /* TweetDetailViewController.swift */,
+			);
+			name = "Tweet Detail VC";
+			sourceTree = "<group>";
+		};
+		3FBEE3B21BEAFA3D00870868 /* Root VC */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEE3B01BE8646F00870868 /* ParsedTweetCell.swift */,
+				3F29BD121BE80E6A00B1631D /* RootViewController.swift */,
+			);
+			name = "Root VC";
+			sourceTree = "<group>";
+		};
+		3FBEE3B31BEAFA7400870868 /* Twitter Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEE3AE1BE8601A00870868 /* ParsedTweet.swift */,
+				3FBEE3B41BEAFB2600870868 /* TwitterAPIRequestUtilites.swift */,
+			);
+			name = "Twitter Utilities";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F25FCBA1BEB98C2008E9A62 /* UserDetailViewController.swift in Sources */,
 				3FBEE3B11BE8646F00870868 /* ParsedTweetCell.swift in Sources */,
+				3FBEE3B51BEAFB2600870868 /* TwitterAPIRequestUtilites.swift in Sources */,
 				3FBEE3AF1BE8601A00870868 /* ParsedTweet.swift in Sources */,
-				3F29BD131BE80E6A00B1631D /* ViewController.swift in Sources */,
+				3F29BD131BE80E6A00B1631D /* RootViewController.swift in Sources */,
 				3F29BD111BE80E6A00B1631D /* AppDelegate.swift in Sources */,
+				3F99A04A1BEB06ED0013E9EC /* TweetDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

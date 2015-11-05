@@ -12,7 +12,7 @@ import Accounts
 
 let defaultAvatarURL = NSURL(string: "https://abs.twimg.com/sticky/default_profile_images/" + "default_profile_6_200x200.png")
 
-class ViewController: UITableViewController{
+class RootViewController: UITableViewController{
   
   var parsedTweets : [ParsedTweet] = []
 
@@ -34,7 +34,7 @@ class ViewController: UITableViewController{
     refreshControl?.endRefreshing()
   }
 
-  @IBAction func handleTweetButtonTapped(sender: UIButton) {
+  @IBAction func handleTweetButtonTapped(sender: AnyObject) {
     if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
       let tweetVC = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
       tweetVC.setInitialText("I just finished the first project in iOS 9 SDK Development. #pragsios9")
@@ -45,30 +45,14 @@ class ViewController: UITableViewController{
   }
   
   func reloadTweets() {
-    let accountStore = ACAccountStore()
-    let twitterAccountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
-    accountStore.requestAccessToAccountsWithType(twitterAccountType,
-      options: nil,
-      completion: {
-        (granted: Bool, error: NSError!) -> Void in guard granted else {
-          NSLog("account access not granted")
-          return
-        }
-        let twitterAccounts = accountStore.accountsWithAccountType(twitterAccountType)
-        guard twitterAccounts.count > 0 else {
-          NSLog("no twitter accounts configured")
-          return
-        }
-        let twitterParams = [
-          "count" : "100"
-        ]
-        let twitterAPIURL = NSURL(string: "https://api.twitter.com/1.1/statuses/home_timeline.json")
-        let request = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: .GET, URL: twitterAPIURL, parameters: twitterParams)
-        request.account = twitterAccounts.first as! ACAccount
-        request.performRequestWithHandler({
-          (data: NSData!, urlResponse: NSHTTPURLResponse!, error: NSError!) -> Void in
-          self.handleTwitterData(data, urlResponse: urlResponse, error: error)
-        })
+    let twitterParams = ["count": "100"]
+    guard let twitterAPIURL = NSURL(string:
+      "https://api.twitter.com/1.1/statuses/home_timeline.json") else {
+        return
+    }
+    sendTwitterRequest(twitterAPIURL, params: twitterParams, completion: {
+      (data, urlResponse, error) -> Void in
+      self.handleTwitterData(data, urlResponse: urlResponse, error: error)
     })
   }
   
@@ -97,6 +81,17 @@ class ViewController: UITableViewController{
     return cell
   }
   
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "showTweetDetailsSegue" {
+      if let row = tableView?.indexPathForSelectedRow?.row,
+      tweetDetailsVC = segue.destinationViewController
+        as? TweetDetailViewController {
+        let parsedTweet = parsedTweets[row]
+          tweetDetailsVC.tweetIdString = parsedTweet.tweetIdString
+      }
+    }
+  }
+  
   private func handleTwitterData (data: NSData!,
     urlResponse: NSHTTPURLResponse!,
     error: NSError!) {
@@ -115,6 +110,7 @@ class ViewController: UITableViewController{
           var parsedTweet = ParsedTweet()
           parsedTweet.tweetText = tweetDict["text"] as? String
           parsedTweet.createdAt = tweetDict["created_at"] as? String
+          parsedTweet.tweetIdString = tweetDict["id_str"] as? String
           if let userDict = tweetDict["user"] as? [String : AnyObject] {
             parsedTweet.userName = userDict["name"] as? String
             if let avatarURLString = userDict["profile_image_url"] as? String {
