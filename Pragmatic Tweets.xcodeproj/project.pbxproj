@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F25FCBA1BEB98C2008E9A62 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25FCB91BEB98C2008E9A62 /* UserDetailViewController.swift */; };
+		3F25FCBD1BEBA68A008E9A62 /* SizeClassOverrideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F25FCBC1BEBA68A008E9A62 /* SizeClassOverrideViewController.swift */; };
 		3F29BD111BE80E6A00B1631D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD101BE80E6A00B1631D /* AppDelegate.swift */; };
 		3F29BD131BE80E6A00B1631D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29BD121BE80E6A00B1631D /* RootViewController.swift */; };
 		3F29BD161BE80E6A00B1631D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29BD141BE80E6A00B1631D /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		3F25FCB91BEB98C2008E9A62 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		3F25FCBC1BEBA68A008E9A62 /* SizeClassOverrideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeClassOverrideViewController.swift; sourceTree = "<group>"; };
 		3F29BD0D1BE80E6A00B1631D /* Pragmatic Tweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pragmatic Tweets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29BD101BE80E6A00B1631D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F29BD121BE80E6A00B1631D /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			name = "User Detail VC";
 			sourceTree = "<group>";
 		};
+		3F25FCBB1BEBA670008E9A62 /* Size Class Override */ = {
+			isa = PBXGroup;
+			children = (
+				3F25FCBC1BEBA68A008E9A62 /* SizeClassOverrideViewController.swift */,
+			);
+			name = "Size Class Override";
+			sourceTree = "<group>";
+		};
 		3F29BD041BE80E6A00B1631D = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		3F29BD0F1BE80E6A00B1631D /* Pragmatic Tweets */ = {
 			isa = PBXGroup;
 			children = (
+				3F25FCBB1BEBA670008E9A62 /* Size Class Override */,
 				3F25FCB81BEB98AB008E9A62 /* User Detail VC */,
 				3F99A0481BEB06B70013E9EC /* Tweet Detail VC */,
 				3FBEE3B31BEAFA7400870868 /* Twitter Utilities */,
@@ -306,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F25FCBD1BEBA68A008E9A62 /* SizeClassOverrideViewController.swift in Sources */,
 				3F25FCBA1BEB98C2008E9A62 /* UserDetailViewController.swift in Sources */,
 				3FBEE3B11BE8646F00870868 /* ParsedTweetCell.swift in Sources */,
 				3FBEE3B51BEAFB2600870868 /* TwitterAPIRequestUtilites.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jZF-nh-2C1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Uo-uq-nRG">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -16,12 +16,59 @@
                         <animations/>
                     </navigationBar>
                     <connections>
-                        <segue destination="zdK-Md-qBS" kind="relationship" relationship="rootViewController" id="gtE-Xd-OV8"/>
+                        <segue destination="KSz-RC-64B" kind="relationship" relationship="rootViewController" id="afo-kN-qhL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reI-Io-x3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="-294"/>
+            <point key="canvasLocation" x="1703" y="-1046"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YDp-z2-lT8">
+            <objects>
+                <navigationController id="9Fh-09-zrl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UxE-Eg-gfv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zdK-Md-qBS" kind="relationship" relationship="rootViewController" id="Q7c-YV-PpA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JwU-7p-tdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1696" y="-1733"/>
+        </scene>
+        <!--Size Class Override View Controller-->
+        <scene sceneID="qCf-8L-CHF">
+            <objects>
+                <viewController id="4Uo-uq-nRG" customClass="SizeClassOverrideViewController" customModule="Pragmatic_Tweets" customModuleProvider="target" sceneMemberID="viewController">
+                    <containerView key="view" opaque="NO" contentMode="scaleToFill" id="KlU-VG-3SW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <connections>
+                            <segue destination="rvQ-NW-7v6" kind="embed" identifier="embedSplitViewSegue" id="QqW-aF-H0U"/>
+                        </connections>
+                    </containerView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mwP-Ze-auC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="-1485"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="yfq-1g-BLD">
+            <objects>
+                <splitViewController id="rvQ-NW-7v6" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="9Fh-09-zrl" kind="relationship" relationship="masterViewController" id="oyf-5K-Igf"/>
+                        <segue destination="jZF-nh-2C1" kind="relationship" relationship="detailViewController" id="hgd-0W-D6d"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Qk-P0-9et" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="-1405"/>
         </scene>
         <!--Tweets-->
         <scene sceneID="ZxS-g5-mw6">
@@ -34,7 +81,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserAndTweetCell" textLabel="YaG-G3-wmx" detailTextLabel="u3n-8S-506" style="IBUITableViewCellStyleSubtitle" id="3b5-jf-Ed6">
-                                <rect key="frame" x="0.0" y="92" width="600" height="125"/>
+                                <rect key="frame" x="0.0" y="72" width="600" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3b5-jf-Ed6" id="dZ4-Rb-DDJ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="124"/>
@@ -62,7 +109,7 @@
                                 <animations/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTweetCell" rowHeight="125" id="tIa-OF-6kI" customClass="ParsedTweetCell" customModule="Pragmatic_Tweets" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="217" width="600" height="125"/>
+                                <rect key="frame" x="0.0" y="197" width="600" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tIa-OF-6kI" id="gfo-0Z-YVM">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="124"/>
@@ -117,7 +164,6 @@
                                     <outlet property="createdAtLabel" destination="aFv-K2-yhc" id="y4f-8L-6cL"/>
                                     <outlet property="tweetTextLabel" destination="2Pl-rb-Ds3" id="HmC-ux-QSr"/>
                                     <outlet property="userNameLabel" destination="qwY-6d-jD9" id="byH-hF-ciN"/>
-                                    <segue destination="KSz-RC-64B" kind="show" identifier="showTweetDetailsSegue" id="73G-6q-VLq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -136,12 +182,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4HU-bp-8K0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="-294"/>
+            <point key="canvasLocation" x="2497" y="-1726"/>
         </scene>
         <!--Tweet-->
         <scene sceneID="yuV-b3-ygH">
             <objects>
-                <viewController id="KSz-RC-64B" customClass="TweetDetailViewController" customModule="Pragmatic_Tweets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TweetDetailsVC" id="KSz-RC-64B" customClass="TweetDetailViewController" customModule="Pragmatic_Tweets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LJb-ba-89Z"/>
                         <viewControllerLayoutGuide type="bottom" id="gyV-P4-bXE"/>

@@ -12,17 +12,26 @@ import Accounts
 
 let defaultAvatarURL = NSURL(string: "https://abs.twimg.com/sticky/default_profile_images/" + "default_profile_6_200x200.png")
 
-class RootViewController: UITableViewController{
+class RootViewController: UITableViewController, UISplitViewControllerDelegate {
   
   var parsedTweets : [ParsedTweet] = []
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        reloadTweets()
-        let refresher = UIRefreshControl()
-        refresher.addTarget(self, action: "handleRefresh:", forControlEvents: .ValueChanged)
-        refreshControl = refresher
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    reloadTweets()
+    let refresher = UIRefreshControl()
+    refresher.addTarget(self, action: "handleRefresh:", forControlEvents: .ValueChanged)
+    refreshControl = refresher
+    if let splitViewController = splitViewController {
+      splitViewController.delegate = self
     }
+  }
+  
+  func splitViewController(splitViewController: UISplitViewController,
+    collapseSecondaryViewController secondaryViewController: UIViewController,
+    ontoPrimaryViewController primaryViewController: UIViewController) -> Bool {
+    return true
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -79,6 +88,27 @@ class RootViewController: UITableViewController{
       }
     })
     return cell
+  }
+  
+  override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    let parsedTweet = parsedTweets[indexPath.row]
+    if let splitViewController = splitViewController
+      where splitViewController.viewControllers.count > 1 {
+        if let tweetDetailNav = splitViewController.viewControllers[1]
+        as? UINavigationController,
+        tweetDetailVC = tweetDetailNav.viewControllers[0]
+          as? TweetDetailViewController {
+            tweetDetailVC.tweetIdString = parsedTweet.tweetIdString
+        }
+    } else {
+      if let storyboard = storyboard,
+      detailVC = storyboard.instantiateViewControllerWithIdentifier("TweetDetailsVC")
+        as? TweetDetailViewController {
+          detailVC.tweetIdString = parsedTweet.tweetIdString
+          splitViewController?.showDetailViewController(detailVC, sender: self)
+      }
+    }
+    tableView.deselectRowAtIndexPath(indexPath, animated: false)
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
