@@ -22,6 +22,7 @@ class UserDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+  var userImageURL : NSURL?
   
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
@@ -63,11 +64,28 @@ class UserDetailViewController: UIViewController {
         if let userImageURL = NSURL(string:
         (tweetDict["profile_image_url"] as! String)),
           userImageData = NSData(contentsOfURL: userImageURL) {
+            self.userImageURL = userImageURL
             self.userImageView.image = UIImage(data: userImageData)
         }
       } catch let error as NSError {
         NSLog("JSON error: \(error)")
       }
+  }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if let imageDetailVC = segue.destinationViewController
+    as? UserImageDetailViewController,
+    userImageURL = userImageURL
+      where segue.identifier == "showUserImageDetailSegue" {
+        var urlString = userImageURL.absoluteString
+        urlString = urlString.stringByReplacingOccurrencesOfString("_normal",
+          withString: "")
+        imageDetailVC.userImageURL = NSURL(string: urlString)
+    }
+  }
+  
+  @IBAction func unwindToUserDetailVC(segue: UIStoryboardSegue) {
+    
   }
 
     override func didReceiveMemoryWarning() {
