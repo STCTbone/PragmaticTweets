@@ -9,6 +9,7 @@
 import UIKit
 import Social
 import Accounts
+import Photos
 
 let defaultAvatarURL = NSURL(string: "https://abs.twimg.com/sticky/default_profile_images/" + "default_profile_6_200x200.png")
 
@@ -43,6 +44,43 @@ class RootViewController: UITableViewController, UISplitViewControllerDelegate {
     refreshControl?.endRefreshing()
   }
 
+  @IBAction func handlePhotoButtonTapped(sender: UIBarButtonItem) {
+    let fetchOptions = PHFetchOptions()
+    PHPhotoLibrary.requestAuthorization({
+      (authorized: PHAuthorizationStatus) -> Void in
+      if authorized == .Authorized {
+        fetchOptions.sortDescriptors =
+          [NSSortDescriptor(key: "creationDate", ascending: false)]
+        let fetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: fetchOptions)
+        if let firstPhoto = fetchResult.firstObject as? PHAsset {
+          self.createTweetForAsset(firstPhoto)
+        }
+      }
+    })
+  }
+  
+  func createTweetForAsset(asset: PHAsset) {
+    let requestOptions = PHImageRequestOptions()
+    requestOptions.synchronous = true
+    PHImageManager.defaultManager().requestImageForAsset(asset,
+      targetSize: CGSize(width: 640.0, height: 480.0),
+      contentMode: .AspectFit,
+      options: requestOptions,
+      resultHandler: {(image: UIImage?, info: [NSObject : AnyObject]?) -> Void in
+        if let image = image
+          where SLComposeViewController.isAvailableForServiceType(
+            SLServiceTypeTwitter) {
+              let tweetVC = SLComposeViewController(forServiceType:
+                SLServiceTypeTwitter)
+              tweetVC.setInitialText("Here's a photi I tweeted. #pragios9")
+              tweetVC.addImage(image)
+              dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.presentViewController(tweetVC, animated: true,
+                  completion: nil)
+              })
+        }
+    })
+  }
   @IBAction func handleTweetButtonTapped(sender: AnyObject) {
     if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
       let tweetVC = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
