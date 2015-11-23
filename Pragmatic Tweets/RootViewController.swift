@@ -10,6 +10,7 @@ import UIKit
 import Social
 import Accounts
 import Photos
+import CoreImage
 
 let defaultAvatarURL = NSURL(string: "https://abs.twimg.com/sticky/default_profile_images/" + "default_profile_6_200x200.png")
 
@@ -67,13 +68,18 @@ class RootViewController: UITableViewController, UISplitViewControllerDelegate {
       contentMode: .AspectFit,
       options: requestOptions,
       resultHandler: {(image: UIImage?, info: [NSObject : AnyObject]?) -> Void in
-        if let image = image
+        if let image = image, var ciImage = CIImage(image: image)
           where SLComposeViewController.isAvailableForServiceType(
             SLServiceTypeTwitter) {
+              ciImage = ciImage.imageByApplyingFilter("CIPixellate",
+                withInputParameters: ["inputScale" : 25.0])
+              let ciContext = CIContext(options: nil)
+              let cgImage = ciContext.createCGImage(ciImage, fromRect: ciImage.extent)
+              let tweetImage = UIImage(CGImage: cgImage)
               let tweetVC = SLComposeViewController(forServiceType:
                 SLServiceTypeTwitter)
               tweetVC.setInitialText("Here's a photi I tweeted. #pragios9")
-              tweetVC.addImage(image)
+              tweetVC.addImage(tweetImage)
               dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.presentViewController(tweetVC, animated: true,
                   completion: nil)
